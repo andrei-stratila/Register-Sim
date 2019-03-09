@@ -1,0 +1,30 @@
+2
+snd R31
+snd R0
+rcv R4
+jgz R4 -1
+add R5 R4
+set R5 R1
+snd R5
+rcv R1
+jgz R1 2
+mul R1 5
+rcv R31
+set R1 1
+add R31 17
+mod R1 R31
+jgz R1 -4
+mul R31 892
+jgz R31 7
+add R1 R4
+add R4 R5
+mod R4 R1
+snd R31
+set R31 23
+rcv R5
+mod R5 2
+snd R4
+rcv R4
+jgz R1 -1
+mul R1 5
+set R1 47
